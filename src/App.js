@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import { Route, Switch } from 'react-router-dom';
 import './App.css';
+import Container from './components/Container/Container';
+import AddNewsPage from './containers/AddNewsPage/AddNewsPage';
+import NewsPage from './containers/News/NewsPage';
+import OneNewsPage from './containers/News/OneNewsPage/OneNewsPage';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Container>
+        <Switch>
+          <Route path='/' exact component={NewsPage} />
+          <Route path='/addNews' component={AddNewsPage} />
+          <Route path='/oneNews' component={OneNewsPage} />
+        </Switch>
+      </Container>
     </div>
   );
 }
