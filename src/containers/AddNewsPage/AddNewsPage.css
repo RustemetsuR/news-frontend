@@ -1,0 +1,22 @@
+.add-news-box{
+    margin: 50px 0;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.add-news-box input {
+    display: block;
+    margin: 10px auto;
+    width: 75%;
+    padding: 10px;
+}
+
+.add-news-box textarea{
+    display: block;
+    margin: 10px auto;
+    width: 75%;
+    height: 500px;
+    padding: 10px;
+    resize: none;
+}
