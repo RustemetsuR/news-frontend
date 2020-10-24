@@ -1,0 +1,25 @@
+.news-list-item-box{
+    border: 1px solid black;
+    margin: 10px 0;
+    padding: 25px;
+}
+
+.dates{
+    margin: 0 10px 0 0;
+    display: inline-block;
+}
+
+.news-list-item-box img{
+    margin: 0 auto;
+    display: block;
+    border-bottom: 1px solid black;
+}
+
+.btns-box{
+    float: right;
+}
+
+.news-list-item-box button{
+    display: inline-block;
+    text-align: end;
+}
